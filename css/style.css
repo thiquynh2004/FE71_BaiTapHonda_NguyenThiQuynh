@@ -1,0 +1,732 @@
+/* code thôi các bạn ơi :))) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hind Madurai', Helvetica, Arial, sans-serif;
+}
+span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.header a {
+  text-decoration: none;
+  color: #000000;
+}
+.header img {
+  width: 60%;
+  height: auto;
+}
+.header i {
+  font-size: 24px;
+  letter-spacing: 4px;
+}
+.header .header-left span {
+  padding: 12px 12px;
+}
+.header .header-left span:hover {
+  color: #777;
+}
+.header .header-right span {
+  padding: 12px 32px;
+}
+.alert i.fa.fa-angle-right{
+  margin: 0 8px;
+  color:#ff9600;
+}
+.alert {
+  margin-top: 60px;
+}
+.alert a {
+  text-decoration: none;
+  color: #000000;
+}
+.alert .item {
+  width: 100%;
+  display: flex;
+
+  /* position: relative; */
+}
+.alert .alert-content-left {
+  width: 25%;
+  background-color: #ff9600;
+  color: #ffffff;
+}
+.clear {
+  clear: both;
+}
+.alert .alert-content-left,
+.alert .alert-content-right {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.alert .alert-content-right {
+  width: 75%;
+  padding: 0 64px;
+}
+.alert .item h1 {
+  font-size: 18px;
+  margin: 0 12px;
+}
+
+.alert .alert-content i {
+  font-size: 24px;
+  float: left;
+  margin: 0 0 0 52px;
+}
+.alert .alert-content-right p {
+  padding: 0 20px;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+}
+.alert .alert-content-right span {
+  color: #ff9600;
+  font-size: 20px;
+}
+.alert .no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  display: flex;
+}
+.alert .owl-dots {
+  display: flex;
+  margin: 0 20px;
+}
+.alert .owl-stage {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.alert .owl-theme .owl-nav {
+  display: none;
+}
+.alert .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ff9800;
+}
+.carousel .slider {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+.carousel .slider1 {
+  background-image: url(https://www.honda.com/-/media/Honda-Homepage/Images/Homepage/Hero-card/car-of-the-year/Honda_Hero_NA-Car-Of-The-Year_Tablet_1982x793.jpg);
+}
+.carousel .slider2 {
+  background-image: url(https://www.honda.com/-/media/Honda-Homepage/Images/Homepage/Hero-card/project-courage/Honda_Hero_ProjectCourage_Tablet_1982x793.jpg);
+}
+.carousel.owl-carousel.owl-theme.owl-loaded.owl-drag {
+  display: block;
+}
+.carousel .owl-theme .owl-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -380px 0 !important;
+  /* color: #ffffff; */
+  position: relative;
+}
+.carousel .owl-nav span {
+  font-size: 64px;
+}
+.carousel .owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  margin-top: 104vh;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.carousel button {
+  margin: 0;
+}
+.carousel .owl-nav span {
+  background: rgba(0, 0, 0, 0.2);
+  width: 44px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0px 8px;
+}
+.owl-theme .owl-nav [class*="owl-"] {
+  margin: 0;
+}
+.carousel .owl-nav span:hover {
+  color: #cc0001;
+  background: rgba(0, 0, 0, 0.2);
+}
+.carousel .owl-theme .owl-dots .owl-dot span {
+  width: 16px;
+  height: 16px;
+}
+.carousel .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #cc0001;
+}
+.honda-product .list-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  position: relative;
+}
+.honda-product .list-product .item-product {
+  height: calc(100vw / 6);
+  /* line-height: 0;
+    color: #ffffff;
+    text-align: center; */
+  /* display: flex; */
+  /* flex-direction: column;
+    /* justify-content: space-around; */
+  /* align-items: center */
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.honda-product .list-product .item-product img {
+  width: 60%;
+  margin-top: 36px;
+}
+.honda-product .list-product .item-product p {
+  margin: 10px 0 30px 0px;
+  font-size: 14px;
+  /* width: 135px; */
+}
+.honda-product .list-product .item-product span {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 3px;
+  margin-bottom: 4px;
+}
+.honda-product .list-product .product-5 span,
+.honda-product .list-product .product-15 span {
+  border-bottom: 2px solid #000000;
+}
+.honda-product .list-product .product-4 img {
+  width: 100%;
+  display: block;
+  height: calc(100vw / 6);
+}
+.honda-product .list-product .item-product {
+  /* overflow: hidden; */
+  position: relative;
+  /* position:absolute; */
+
+}
+.honda-product .list-product .product-1 {
+  background-color: #007cc2;
+}
+.honda-product .list-product .product-1::before {
+  content: "";
+  border-left: 16px solid #007cc2;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  z-index: 5;
+  right: -16px;
+  top: 40%;
+}
+.honda-product .list-product .product-3::before,
+.honda-product .list-product .product-9::before,
+.honda-product .list-product .product-12::before {
+  content: "";
+  border-left: 16px solid #cc0001;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  z-index: 1;
+  right: -16px;
+  top: 40%;
+}
+.honda-product .list-product .product-5::before {
+  content: "";
+  border-top: 16px solid #ffffff;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  position: absolute;
+  z-index: 1;
+  bottom: -16px;
+  right: 42%;
+}
+.honda-product .list-product .product-7::before {
+  content: "";
+  border-right: 16px solid #000000;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  z-index: 1;
+  left: -16px;
+  top: 40%;
+}
+.honda-product .list-product .product-15::before {
+  content: "";
+  border-right: 16px solid #ffffff;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  z-index: 1;
+  left: -16px;
+  top: 40%;
+}
+.honda-product .list-product .product-16::before {
+  content: "";
+  border-bottom: 16px solid #cc0001;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  position: absolute;
+  z-index: 1;
+  right: 40%;
+  top: -16px;
+}
+
+.honda-product .list-product .product-2,
+.honda-product .list-product .product-4,
+.honda-product .list-product .product-6,
+.honda-product .list-product .product-8,
+.honda-product .list-product .product-10,
+.honda-product .list-product .product-11,
+.honda-product .list-product .product-13,
+.honda-product .list-product .product-14 {
+  width: 100%;
+  height: calc(100vw / 6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* position:absolute;  */
+  overflow: hidden;
+  position: relative;
+  transition: all ease-in-out;
+
+  
+}
+/* .honda-product .list-product .product-2:hover {
+
+  animation: pulse;
+  animation-duration: 2s;
+} */
+.honda-product .list-product .product-2:hover,
+.honda-product .list-product .product-4:hover,
+.honda-product .list-product .product-6:hover,
+.honda-product .list-product .product-8:hover,
+.honda-product .list-product .product-10:hover,
+.honda-product .list-product .product-11:hover,
+.honda-product .list-product .product-13:hover,
+.honda-product .list-product .product-14:hover {
+  /* animation: pulse;
+  animation-duration: 1s; */
+  transform: scale(1.2);
+  transition: all ease-in-out 1s;
+
+}
+.honda-product .list-product .product-2 {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  background-image: url(../images/hinh10.webp);
+  height: 100%;
+}
+
+.honda-product .list-product .product-3,
+.honda-product .list-product .product-9,
+.honda-product .list-product .product-12,
+.honda-product .list-product .product-16 {
+  background-color: #cc0001;
+}
+.honda-product .list-product .product-5,
+.honda-product .list-product .product-15 {
+  color: #000000;
+}
+.honda-product .list-product .product-5,
+.honda-product .list-product .product-15 {
+  background-color: #ffffff;
+}
+.honda-product .list-product .product-4 {
+  grid-column: 5 / span 2;
+  grid-row: 1 / span 1;
+  background-image: url(../images/hinh15.jpg);
+}
+
+.honda-product .list-product .product-6 {
+  grid-column: 4 / span 2;
+  grid-row: 2 / span 1;
+  background-image: url(../images/hinh8.webp);
+}
+.honda-product .list-product .product-7 {
+  background-color: #000000;
+}
+.honda-product .list-product .product-8 {
+  background-image: url(../images/hinh14.jpg);
+}
+.honda-product .list-product .product-10 {
+  background-image: url(../images/hinh12.jpg);
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 1;
+}
+
+.honda-product .list-product .product-11 {
+  background-image: url(../images/hinh9.jpg);
+  grid-column: 5 / span 2;
+  grid-row: 3 / span 1;
+}
+.honda-product .list-product .product-13 {
+  background-image: url(../images/hinh11.jpg);
+}
+.honda-product .list-product .product-14 {
+  background-image: url(../images/hinh13.webp);
+  grid-column: 3 / span 2;
+  grid-row: 4 / span 1;
+}
+.our-company .our-company-header {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bold;
+}
+.our-company .company-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+/* .our-company .company-list .company-item img {
+  display: block;
+  width: 100%;
+} */
+.our-company .company-list .company-item{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #ffffff;
+  
+}
+.our-company .company-list .item-1{
+  background-image: url(../images/hinh20.jpg);
+}
+.our-company .company-list .item-2{
+  background-image: url(../images/hinh19.jpg);
+}
+.our-company .company-list .item-3{
+  background-image: url(../images/hinh18.jpg);
+}
+.our-company .company-list .item-4{
+  background-image: url(../images/hinh21.jpg);
+}
+.our-company .company-item h1{
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+.our-company .company-item p{
+  font-size:16px;
+  margin: 10px 130px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.our-company .company-item span{
+  padding-bottom: 20px;
+}
+.power{
+  background-image:url(../images/hinh17.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 90vh;
+  text-align: center;
+}
+.power .header-power{
+  padding-top: 56px;
+  line-height: 30px;
+  /* margin-top: 40px; */
+}
+.container{
+  max-width: 1280px;
+  margin: 10px 60px;
+}
+
+.story .story-header{
+  text-align: center;
+  margin: 30px auto;
+}
+.story .list-story{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.story .list-story .item-story img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all ease-in-out;
+  /* position: absolute; */
+  
+}
+.story .list-story .item-story, 
+.story .list-story .image-story{
+  position: relative;
+  overflow: hidden;
+  transition: all ease-in-out ;
+}
+.story .list-story .item-story:hover img{
+  transform: scale(1.2);
+  transition: all ease-in-out 0.6s; 
+}
+.story .list-story .item-detail {
+  text-align: center;
+  line-height: 20px;
+  padding: 40px 20px;
+}
+.story .list-story .item-detail h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.story .list-story .item-detail p{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.story .list-story .item-detail a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #337ab7;
+  font-weight: bold;
+}
+.story .list-story .item-story{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  /* height:calc(100vw / 3); */
+}
+/* .story .list-story .item-story .item-5{
+  background: #f2f2f2;
+} */
+.item-story.item-5 {
+  background: #f2f2f2;
+}
+.story .list-story .item-story .icon-item{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.story .list-story .item-story .icon-item i{
+  font-size: 28px;
+  color: #ffffff;
+}
+i.fab.fa-twitter::before{
+  color: #337ab7;
+}
+.story .list-story .item-story .content-twitter{
+  padding: 44px 24px;
+}
+.content-twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.content-twitter .twitter-info img{
+  /* width: 40px;
+  height: 40px !important; */
+  background: #000000;
+}
+.content-twitter .twitter-info{
+  display: flex;
+  
+  /* flex-direction: column;
+  justify-content: space-between;
+  align-items: center; */
+}
+.content-twitter .twitter-info-box{
+  padding-left: 20px;
+}
+.content-twitter .twitter-info-box h1,
+.content-twitter .twitter-info-box span{
+  font-size: 16px;
+  color:#337ab7;
+  text-align: center;
+}
+.content-twitter p{
+  margin: 12px 0px;
+  font-size: 30px;
+  font-weight: 200;
+}
+.content-twitter  a{
+  text-decoration: none;
+  color:#337ab7;
+}
+.content-twitter span{
+  font-size:12px;
+  font-weight:300;
+  color: #8f8f8f;
+}
+.content-twitter .twitter-action{
+  margin: 12px 0;
+}
+.content-twitter .twitter-action a{
+  color: #8f8f8f;
+  font-size: 12px;
+  margin-right: 12px;
+}
+.content-twitter .twitter-action a:hover{
+  color: #337ab7;
+}
+.footer{
+  height: 160vh;
+  position: relative;
+  background-color: #eeeeee;
+  margin-top: 80px;
+}
+.footer .row-link{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/* .footer .row-link .title{
+  margin: 20px 20px;
+} */
+.footer .row-link h1{
+  font-size: 20px;
+  color:#8f8f8f;
+  text-transform: uppercase;
+  margin: 16px 0px;
+}
+.footer .row-link a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  
+}
+.footer .row-link p{
+  color:#8f8f8f;
+  font-size: 14px;
+}
+ul {
+  list-style-type: none;
+}
+.footer .row-link li{
+  line-height: 40px;
+}
+.footer .contact .social ul, .footer .contact .final-link ul{
+  margin-top:20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .contact .social img {
+  margin-right: 16px;
+}
+.footer .contact .policy p{
+  color: #8f8f8f;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+.footer .contact .final-link a{
+  text-decoration: none;
+}
+.footer .row-link a:hover{
+  color:#8f8f8f;
+}
+.column {
+  width: 100%;
+}
+@media screen and (max-width: 576px){
+  body{
+    overflow-x:hidden;
+  }
+  .header .header-left span, .header .header-right span {
+    display:none;
+  }
+  .alert .item h1{
+    display:none;
+  }
+  .alert .owl-dots{
+    display:none;
+  }
+  .alert .alert-content-left{
+    width: 15%;
+  }
+  .alert .alert-content-right{
+    width: 85%;
+    padding: 0 20px 0 0;
+    display:block;
+  }
+  .alert .alert-content i{
+    margin: 0 0 0 16px;
+  }
+  .alert .alert-content-left .content-1::before{
+    content: "Our Consumers'Right";
+    color:#777777;
+    font-size: 14px;
+    display: flex;
+    /* padding-bottom: 20px; */
+  }
+  .alert .alert-content-right .content-1::before{
+    content: "Airbag Recall";
+    color: #777777;
+    font-size: 14px;
+    display: flex
+  }
+  .alert .alert-content-right span{
+    font-size: 15px;
+    float:left;
+    padding-left: 20px;
+  }
+  /* .honda-product .list-product{
+    flex-direction: 1fr 1fr 1fr;
+  }
+  .honda-product .list-product .product-2{
+    grid-column:2/ span 2;
+    grid-row: 1/ span 1;
+  }
+  .honda-product .list-product .product-4{
+    grid-column:1/ span 2;
+    grid-row:2/span 1;
+  }
+  .honda-product .list-product .product-6{
+    grid-column:2/ span 2;
+    grid-row: 3/span 1;
+  }
+  .honda-product .list-product .product-8{
+    grid-column:1/ span 2 ;
+    grid-row: 4/ span 1;
+  }
+  .honda-product .list-product .product-10{
+    grid-column:2/ span 2;
+    grid-row: 5/ span 1;
+    
+  }
+  .honda-product .list-product .product-11{
+    grid-column:1/ span 2 ;
+    grid-row: 6/ span 1;
+  }
+  .honda-product .list-product .product-13{
+    grid-column:2/ span 2;
+    grid-row: 7/ span 1;
+   }
+  .honda-product .list-product .product-14{
+    grid-column:1/ span 2 ;
+    grid-row: 8/ span 1;
+   } */
+}
+  
